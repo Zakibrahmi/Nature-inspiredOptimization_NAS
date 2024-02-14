@@ -6,16 +6,16 @@ Neural Architecture Search (NAS), a subfield of AutoML, aims to  automate the ar
 Fig. 1. Three main components of Neural Architecture Search (NAS) models. (Image source: [Elsken, et al. 2019 ](https://arxiv.org/abs/1808.05377) with customized annotation in red (https://lilianweng.github.io/posts/2020-08-06-nas/)) 
 # <h1 id='Content'>Content</h1>
 
-<ins> Towards Less Constrained Macro-Neural Architecture Search </ins>[Paper](https://arxiv.org/abs/2203.05508), [Code](https://github.com/VascoLopes/LCMNAS), Date 2023.
+<ins> Towards Less Constrained Macro-Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/2203.05508), [Code](https://github.com/VascoLopes/LCMNAS), Date 2023.
 
 Recently, V. Lopes et al. proposed LCMNAS that models the search space as Weighted Directed Graphs with hidden properties aiming to automatically design search spaces without requiring human-specified settings by leveraging information about existing CNNs. The search strategy can perform both micro and macro-architecture search, via evolution, without requiring human-defined restrictions(e.g., heuristic). A mixed-performance strategy is proposed for a fast-generated architecture evaluation. 
 
- <ins> HiveNAS: Neural Architecture Search using Artificial Bee Colony Optimization </ ins>[Paper](https://arxiv.org/abs/2211.10250), [Code](https://github.com/ThunderStruct/HiveNAS/), Date 2023. 
+ <ins> HiveNAS: Neural Architecture Search using Artificial Bee Colony Optimization </ins>[Paper](https://arxiv.org/abs/2211.10250), [Code](https://github.com/ThunderStruct/HiveNAS/), Date 2023. 
 
  HiveNAS is a Swarm optimization-based NAS optimization. Artificial Bee Colony optimization  is used. Layer-based Search Space is used to represent the search space. Hence, the main contribution of this paper is regarding search space representation. For memory-efficiency purposes, HiveNAS discards the DAG-encoding concept and instead encodes architectures on the fly, storing each positional data (string-encoded neural architecture) in its corresponding bee memory. During the evaluation  phase, the authors applied Lower Fidelity Estimation, which boosts the exploration capabilities of the large and granular Search Space with minimal compromises. 
 
 
- <ins> G-EA: Efficient Guided Evolution for Neural Architecture Search </<ins>>  [Paper](https://arxiv.org/abs/2110.15232), [Code](https://github.com/VascoLopes/GEA), Date 2022. 
+ <ins> G-EA: Efficient Guided Evolution for Neural Architecture Search </ins>  [Paper](https://arxiv.org/abs/2110.15232), [Code](https://github.com/VascoLopes/GEA), Date 2022. 
 
 Similar to the idea presented by NPENAS, G-EA uses a zero-proxy estimator, as a guiding mechanism to the search method,  to evaluate several architectures in each generation at the initialization stage. To reduce the search space only the Top P scoring networks are trained and kept for the next generation. An Evolutionary algorithm is applied.
 
