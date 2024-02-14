@@ -8,7 +8,7 @@ Neural Architecture Search (NAS), a subfield of AutoML, aims to  automate the ar
    
 ![Screenshot](NAS-high-level.png)
 Fig. 1. Three main components of Neural Architecture Search (NAS) models. (Image source: [Elsken, et al. 2019 ](https://arxiv.org/abs/1808.05377) with customized annotation in red https://lilianweng.github.io/posts/2020-08-06-nas/) 
-# <h1 id='Content'>Content</h1>
+# <h1 id='Content'>Papers</h1>
 
 <ins> Towards Less Constrained Macro-Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/2203.05508), [Code](https://github.com/VascoLopes/LCMNAS), Date 2023.
 
@@ -17,7 +17,6 @@ Recently, V. Lopes et al. proposed LCMNAS that models the search space as Weight
  <ins> HiveNAS: Neural Architecture Search using Artificial Bee Colony Optimization </ins>[Paper](https://arxiv.org/abs/2211.10250), [Code](https://github.com/ThunderStruct/HiveNAS/), Date 2023. 
 
  HiveNAS is a Swarm optimization-based NAS optimization. Artificial Bee Colony optimization  is used. Layer-based Search Space is used to represent the search space. Hence, the main contribution of this paper is regarding search space representation. For memory-efficiency purposes, HiveNAS discards the DAG-encoding concept and instead encodes architectures on the fly, storing each positional data (string-encoded neural architecture) in its corresponding bee memory. During the evaluation  phase, the authors applied Lower Fidelity Estimation, which boosts the exploration capabilities of the large and granular Search Space with minimal compromises. 
-
 
 
 TS-ENAS:Two-Stage Evolution for Cell-based Network Architecture Search</ins>  [Paper](https://arxiv.org/abs/2310.09525), [Code](No Code), Date 2023. 
@@ -37,5 +36,7 @@ The solution comes from Intel researchers, the implementation is called DyNAS-T 
 
 In this paper, to enhance the exploration ability of EA algorithm, NPENAS to neural predictors are defined. The first predictor a graph-based uncertainty estimation network as a surrogate model. The second predictor is a graph-based neural network that directly outputs the performance prediction of the input neural architecture. An Evolutionary algorithm is applied. These predictors are used to rank the candidate architectures. The top performance architectures are selected as offspring and evaluated by training and validation. The procedure repeats a given number of times, and the neural predictor is trained from scratch with all the architectures in the pool at each iteration.
 
- 
+# <h1 id='Content'>Open source Framworks</h1>
+1. [ArchGym]( https://github.com/srivatsankrishnan/oss-arch-gym)
+2. [DyNAS-T](https://github.com/IntelLabs/DyNAS-T)
 
