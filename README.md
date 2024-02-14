@@ -3,7 +3,7 @@ This repository collects recent Nature-inspired algorithms(Evolutionary and swar
 
 Neural Architecture Search (NAS), a subfield of AutoML, aims to  automate the architecture designs of neural networks by optimizing the topology of the networks( how to connect nodes and which operators to choose). NAS is a growing area in deep learning research that aims to deliver better-performing models and applications. It follows three stages: search space, search strategy/algorithm, and evaluation strategy. 
 ![Screenshot](NAS-high-level.png)
-
+Fig. 1. Three main components of Neural Architecture Search (NAS) models. (Image source: Elsken, et al. 2019 with customized annotation in red) 
 # <h1 id='Content'>Content</h1>
 
 <ins> Towards Less Constrained Macro-Neural Architecture Search </ins>[Paper](https://arxiv.org/abs/2203.05508), [Code](https://github.com/VascoLopes/LCMNAS), Date 2023.
