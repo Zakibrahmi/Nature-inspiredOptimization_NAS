@@ -8,6 +8,8 @@ Recently, V. Lopes et al. proposed LCMNAS that models the search space as Weight
 
  <ins> HiveNAS: Neural Architecture Search using Artificial Bee Colony Optimization </ ins>[Paper](https://arxiv.org/abs/2211.10250), [Code](https://github.com/ThunderStruct/HiveNAS/), Date 2023. 
 
+ HiveNAS is a Swarm optimization-based NAS optimization. Artificial Bee Colony optimization  is used. Layer-based Search Spaces is used to represent the search space. Hence, the main contribution of this paper is regarding search space representation. For memory-efficiency purposes, HiveNAS discards the DAG-encoding concept and instead encodes architectures on the fly, storing each positional data (string-encoded neural architecture) in its corresponding bee memory. 
+
 
  <ins> G-EA: Efficient Guided Evolution for Neural Architecture Search </<ins>>  [Paper](https://arxiv.org/abs/2110.15232), [Code](https://github.com/VascoLopes/GEA), Date 2022. 
 
