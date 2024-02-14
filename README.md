@@ -5,7 +5,7 @@ Neural Architecture Search (NAS), a subfield of AutoML, aims to  automate the ar
 1. Search space:  Layer-based, Block-based, and Cell-based
 2. Search strategy/algorithm, and
 3. Evaluation strategy.
-4. 
+   
 ![Screenshot](NAS-high-level.png)
 Fig. 1. Three main components of Neural Architecture Search (NAS) models. (Image source: [Elsken, et al. 2019 ](https://arxiv.org/abs/1808.05377) with customized annotation in red (https://lilianweng.github.io/posts/2020-08-06-nas/)) 
 # <h1 id='Content'>Content</h1>
