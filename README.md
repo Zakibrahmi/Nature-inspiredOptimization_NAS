@@ -1,5 +1,5 @@
 # Evolutionary NAS
-This repository collects recent Nature-inspired algorithms(Evolutionary and swarm)--based Neural Architecture Search (NAS) optimization and provides a summary (Paper and Code) by year and task. 
+This repository collects recent Nature-inspired algorithms(Evolutionary and swarm)--based Neural Architecture Search (NAS) optimization and provides a summary (Paper and Code). 
 # <h1 id='Content'>Content</h1>
 
 <ins> Towards Less Constrained Macro-Neural Architecture Search </ins>[Paper](https://arxiv.org/abs/2203.05508), [Code](https://github.com/VascoLopes/LCMNAS), Date 2023.
