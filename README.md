@@ -1,6 +1,11 @@
 # EvolutionaryNAS
 This repository collects recent Nature-inspired algorithms(Evolutionary and swarm)--based Neural Architecture Search (NAS) optimization and provides a summary (Paper and Code) by year and task. 
 # <h1 id='Content'>Content</h1>
+Towards Less Constrained Macro-Neural Architecture Search  [Paper](https://arxiv.org/abs/2203.05508), [Code](https://github.com/VascoLopes/LCMNAS), Date 2023.
+Recently, V. Lopes et al. proposed LCMNAS that models the search space as Weighted Directed Graphs with hidden properties aiming to automatically design search spaces without
+requiring human-specified settings by leveraging information about existing CNNs. The search strategy can perform both micro and macro-architecture search, via
+evolution, without requiring human-defined restrictions(e.g., heuristic). A mixed-performance strategy is proposed for a fast-generated architecture evaluation. 
+
 NPENAS: Neural Predictor Guided Evolution for Neural Architecture Search, [Paper](https://arxiv.org/abs/2003.12857), [Code](https://github.com/auroua/NPENASv1), Date 2020. 
 
 In this paper, to enhance the exploration ability of EA algorithm, NPENAS to neural predictors are defined. The first predictor a graph-based uncertainty estimation network as a surrogate model. The second predictor is a graph-based neural network that directly outputs the performance prediction of the input neural architecture. An Evolutionary algorithm is applied. 
