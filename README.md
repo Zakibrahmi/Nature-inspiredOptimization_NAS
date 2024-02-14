@@ -4,9 +4,9 @@ This repository collects recent Nature-inspired algorithms(Evolutionary and swar
 
 <ins> Towards Less Constrained Macro-Neural Architecture Search </ins>[Paper](https://arxiv.org/abs/2203.05508), [Code](https://github.com/VascoLopes/LCMNAS), Date 2023.
 
-Recently, V. Lopes et al. proposed LCMNAS that models the search space as Weighted Directed Graphs with hidden properties aiming to automatically design search spaces without
-requiring human-specified settings by leveraging information about existing CNNs. The search strategy can perform both micro and macro-architecture search, via
-evolution, without requiring human-defined restrictions(e.g., heuristic). A mixed-performance strategy is proposed for a fast-generated architecture evaluation. 
+Recently, V. Lopes et al. proposed LCMNAS that models the search space as Weighted Directed Graphs with hidden properties aiming to automatically design search spaces without requiring human-specified settings by leveraging information about existing CNNs. The search strategy can perform both micro and macro-architecture search, via evolution, without requiring human-defined restrictions(e.g., heuristic). A mixed-performance strategy is proposed for a fast-generated architecture evaluation. 
+
+ <ins> HiveNAS: Neural Architecture Search using Artificial Bee Colony Optimization </ ins>[Paper](https://arxiv.org/abs/2211.10250), [Code](https://github.com/ThunderStruct/HiveNAS/), Date 2023. 
 
 
  <ins> G-EA: Efficient Guided Evolution for Neural Architecture Search </<ins>>  [Paper](https://arxiv.org/abs/2110.15232), [Code](https://github.com/VascoLopes/GEA), Date 2022. 
