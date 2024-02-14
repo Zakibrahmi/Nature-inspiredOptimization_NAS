@@ -19,6 +19,12 @@ Recently, V. Lopes et al. proposed LCMNAS that models the search space as Weight
  HiveNAS is a Swarm optimization-based NAS optimization. Artificial Bee Colony optimization  is used. Layer-based Search Space is used to represent the search space. Hence, the main contribution of this paper is regarding search space representation. For memory-efficiency purposes, HiveNAS discards the DAG-encoding concept and instead encodes architectures on the fly, storing each positional data (string-encoded neural architecture) in its corresponding bee memory. During the evaluation  phase, the authors applied Lower Fidelity Estimation, which boosts the exploration capabilities of the large and granular Search Space with minimal compromises. 
 
 
+
+TS-ENAS:Two-Stage Evolution for Cell-based Network Architecture Search</ins>  [Paper](https://arxiv.org/abs/2310.09525), [Code](No Code), Date 2023. 
+
+TS-ENAS features by two-stage search strategy. The cells in the searched neural network structure are fine-tuned to find the best neural network structure. First, an evolutionary algorithm is used to search for the general structure of the network based on the cell-based search space. A novel cell-based search space and effective Double-coding are created to represent various building blocks and neural network architectures in the search space to match this two-stage search technique. In the second stage, a global search for specific operations in the network is performed. TS-ENAS performs cross-mutation and pruning operations on the nodes and edges inside the cell. To accelerate the search process, a weight inheritance method is used: the weights of each new individual are inherited from the cell search space.
+
+
  <ins> G-EA: Efficient Guided Evolution for Neural Architecture Search </ins>  [Paper](https://arxiv.org/abs/2110.15232), [Code](https://github.com/VascoLopes/GEA), Date 2022. 
 
 Similar to the idea presented by NPENAS, G-EA uses a zero-proxy estimator, as a guiding mechanism to the search method,  to evaluate several architectures in each generation at the initialization stage. To reduce the search space only the Top P scoring networks are trained and kept for the next generation. An Evolutionary algorithm is applied.
