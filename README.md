@@ -32,6 +32,10 @@ Similar to the idea presented by NPENAS, G-EA uses a zero-proxy estimator, as a 
 
 The solution comes from Intel researchers, the implementation is called DyNAS-T (Dynamic Neural Architecture Search Toolkit) as a super-network neural architecture search NAS optimization package.  Aiming to obtain hardware-performance trade-offs, the proposed framework, which belongs to the one-shot weight-sharing NAS paradigm, accelerates the post-training sub-network search process( not the optional fine-tuning stage). For this end, multi-objective genetic algorithms and lightly trained objective predictors are used. 
 
+<ins> CARS: Continuous Evolution for Efficient Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/1909.04977), [Code](https://github.com/huawei-noah/CARS), Date 2020. 
+
+The idea behind the Care solution is the continuous search for neural network architectures by maximally utilizing the knowledge learned in the last evolution generation. At the initial step, SuperNet was initialized with considerable cells and blocks. An individual representing an architecture is obtained from the SuperNet through several benchmark operations (i.e., crossover and mutation).
+
 <ins> NPENAS: Neural Predictor Guided Evolution for Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/2003.12857), [Code](https://github.com/auroua/NPENASv1), Date 2020. 
 
 In this paper, to enhance the exploration ability of EA algorithm, NPENAS to neural predictors are defined. The first predictor a graph-based uncertainty estimation network as a surrogate model. The second predictor is a graph-based neural network that directly outputs the performance prediction of the input neural architecture. An Evolutionary algorithm is applied. These predictors are used to rank the candidate architectures. The top performance architectures are selected as offspring and evaluated by training and validation. The procedure repeats a given number of times, and the neural predictor is trained from scratch with all the architectures in the pool at each iteration.
