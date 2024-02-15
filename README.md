@@ -23,7 +23,6 @@ TS-ENAS:Two-Stage Evolution for Cell-based Network Architecture Search</ins>  [P
 
 TS-ENAS features by two-stage search strategy. The cells in the searched neural network structure are fine-tuned to find the best neural network structure. First, an evolutionary algorithm is used to search for the general structure of the network based on the cell-based search space. A novel cell-based search space and effective Double-coding are created to represent various building blocks and neural network architectures in the search space to match this two-stage search technique. In the second stage, a global search for specific operations in the network is performed. TS-ENAS performs cross-mutation and pruning operations on the nodes and edges inside the cell. To accelerate the search process, a weight inheritance method is used: the weights of each new individual are inherited from the cell search space.
 
-
  <ins> G-EA: Efficient Guided Evolution for Neural Architecture Search </ins>  [Paper](https://arxiv.org/abs/2110.15232), [Code](https://github.com/VascoLopes/GEA), Date 2022. 
 
 Similar to the idea presented by NPENAS, G-EA uses a zero-proxy estimator, as a guiding mechanism to the search method,  to evaluate several architectures in each generation at the initialization stage. To reduce the search space only the Top P scoring networks are trained and kept for the next generation. An Evolutionary algorithm is applied.
@@ -34,7 +33,7 @@ The solution comes from Intel researchers, the implementation is called DyNAS-T 
 
 <ins> CARS: Continuous Evolution for Efficient Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/1909.04977), [Code](https://github.com/huawei-noah/CARS), Date 2020. 
 
-The idea behind the Care solution is the continuous search for neural network architectures by maximally utilizing the knowledge learned in the last evolution generation. At the initial stage, SuperNet was initialized with considerable cells and blocks. An individual representing an architecture is obtained from the SuperNet through several benchmark operations (i.e., crossover and mutation). Genetic algorithm is used as an evolutionary algorithm. To reduce the search space, the parameters-sharing strategy is adopted to share  parameters W for different architectures. 
+The idea behind the Care solution is the continuous search for neural network architectures by maximally utilizing the knowledge learned in the last evolution generation. At the initial stage, SuperNet was initialized with considerable cells and blocks. An individual representing an architecture is obtained from the SuperNet through several benchmark operations (i.e., crossover and mutation). Genetic algorithm is used as an evolutionary algorithm. To reduce the search space, the parameters-sharing strategy is adopted to share  parameters W for different architectures. Computing the gradient (slope) using the chain rule w.t. Wi can be costly. 
 
 <ins> NPENAS: Neural Predictor Guided Evolution for Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/2003.12857), [Code](https://github.com/auroua/NPENASv1), Date 2020. 
 
