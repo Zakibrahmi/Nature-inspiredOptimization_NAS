@@ -34,7 +34,7 @@ The solution comes from Intel researchers, the implementation is called DyNAS-T 
 
 <ins> CARS: Continuous Evolution for Efficient Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/1909.04977), [Code](https://github.com/huawei-noah/CARS), Date 2020. 
 
-The idea behind the Care solution is the continuous search for neural network architectures by maximally utilizing the knowledge learned in the last evolution generation. At the initial step, SuperNet was initialized with considerable cells and blocks. An individual representing an architecture is obtained from the SuperNet through several benchmark operations (i.e., crossover and mutation).
+The idea behind the Care solution is the continuous search for neural network architectures by maximally utilizing the knowledge learned in the last evolution generation. At the initial stage, SuperNet was initialized with considerable cells and blocks. An individual representing an architecture is obtained from the SuperNet through several benchmark operations (i.e., crossover and mutation). Genetic algorithm is used as an evolutionary algorithm. To reduce the search space, the parameters-sharing strategy is adopted to share  parameters W for different architectures. 
 
 <ins> NPENAS: Neural Predictor Guided Evolution for Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/2003.12857), [Code](https://github.com/auroua/NPENASv1), Date 2020. 
 
