@@ -28,7 +28,6 @@ TS-ENAS features by two-stage search strategy. The cells in the searched neural 
 
 To overcome issues observed in existing Evolutionary NAS algorithms which do not perform well, mainly for crossover operations, due to the diverse structure of neural networks and the difficulty in performance evaluation, EF-ENA is proposed as an evolutionary NAS algorithm based on evaluation correction and functional units. Hence, to select a better parent network for generic operation, the authors propose  an evaluation correction-based mating selection operation (ECMS) to correct the network performance discrimination based on low fidelity accuracy. ECMS evaluates the neural network performance from three aspects: the validation accuracy, the number of parameters, and the structural property of the network. Network architectures with higher validation accuracy and a lower number of parameters are often considered to have better performance. The maximum dropout rate (called the dropout parameter) among the convolutional blocks to evaluate the network performance.
 
-
 Aiming to enhance the performance of the traditional network architecture crossovers, a functional unit-based crossover operation is proposed. The idea behind this operation is to split the network architecture into different segments according to  functional units and then when the crossover operation is performed between two architectures only functional units are exchanged between these two networks. This approach protects valuable network architecture segments from being destroyed and improves the performance of crossover operations. To boost the diversity of the algorithm, an environmental selection operation based on species protection is developed, which divides the network population into different species based on the individuals' structure and selects them equally. This operation balances environmental selection pressure among different network architectures. Block-based encoding approach is used to design a solution. Hence, a network architecture is composed of three types of building blocks (convolutional, pooling, and fully connected blocks). 
 
  <ins> G-EA: Efficient Guided Evolution for Neural Architecture Search </ins>  [Paper](https://arxiv.org/abs/2110.15232), [Code](https://github.com/VascoLopes/GEA), Date 2022. 
@@ -38,6 +37,9 @@ Similar to the idea presented by NPENAS, G-EA uses a zero-proxy estimator, as a 
 <ins> A hardware-aware framework for accelerating Neural  architecture search  across modalities </ins> [Paper](https://arxiv.org/abs/2205.10358), [Code](https://github.com/IntelLabs/DyNAS-T), Date 2022.
 
 The solution comes from Intel researchers, the implementation is called DyNAS-T (Dynamic Neural Architecture Search Toolkit) as a super-network neural architecture search NAS optimization package.  Aiming to obtain hardware-performance trade-offs, the proposed framework, which belongs to the one-shot weight-sharing NAS paradigm, accelerates the post-training sub-network search process( not the optional fine-tuning stage). For this end, multi-objective genetic algorithms and lightly trained objective predictors are used. 
+
+<ins> IntelliSwAS: Optimizing deep neural network architectures using a particle swarm-based approach </ins>[Paper](https://arxiv.org/abs/1909.04977), [Code](https://github.com/huawei-noah/CARS), Date 2021. 
+
 
 <ins> CARS: Continuous Evolution for Efficient Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/1909.04977), [Code](https://github.com/huawei-noah/CARS), Date 2020. 
 
