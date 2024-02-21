@@ -36,14 +36,16 @@ Similar to the idea presented by NPENAS, G-EA uses a zero-proxy estimator, as a 
 
 <ins> A hardware-aware framework for accelerating Neural  architecture search  across modalities </ins> [Paper](https://arxiv.org/abs/2205.10358), [Code](https://github.com/IntelLabs/DyNAS-T), Date 2022.
 
-The solution comes from Intel researchers, the implementation is called DyNAS-T (Dynamic Neural Architecture Search Toolkit) as a super-network neural architecture search NAS optimization package.  Aiming to obtain hardware-performance trade-offs, the proposed framework, which belongs to the one-shot weight-sharing NAS paradigm, accelerates the post-training sub-network search process( not the optional fine-tuning stage). For this end, multi-objective genetic algorithms and lightly trained objective predictors are used. 
+The solution comes from Intel researchers, the implementation is called DyNAS-T (Dynamic Neural Architecture Search Toolkit) is a super-network neural architecture search NAS optimization package. Aiming to obtain hardware-performance trade-offs, the proposed framework, which belongs to the one-shot weight-sharing NAS paradigm, accelerates the post-training sub-network search process( not the optional fine-tuning stage). For this end, multi-objective genetic algorithms and lightly trained objective predictors are used. 
 
 <ins> IntelliSwAS: Optimizing deep neural network architectures using a particle swarm-based approach </ins>[Paper](https://arxiv.org/abs/1909.04977), [Code](https://github.com/huawei-noah/CARS), Date 2021. 
+
+IntelliSwAS is a Swarm optimization-based NAS for CNN architecture optimization. To boost the search speed, the search space is modeled as a DAG structure where vertices represent a computational unit and the data flow is represented as directed edges, which is cell-based search space.  
 
 
 <ins> CARS: Continuous Evolution for Efficient Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/1909.04977), [Code](https://github.com/huawei-noah/CARS), Date 2020. 
 
-The idea behind the Care solution is the continuous search for neural network architectures by maximally utilizing the knowledge learned in the last evolution generation. At the initial stage, SuperNet was initialized with considerable cells and blocks. An individual representing an architecture is obtained from the SuperNet through several benchmark operations (i.e., crossover and mutation). Genetic algorithm is used as an evolutionary algorithm. To reduce the search space, the parameters-sharing strategy is adopted to share  parameters W for different architectures. Computing the gradient (slope) using the chain rule w.t. Wi can be costly. 
+The idea behind the Care solution is the continuous search for neural network architectures by maximally utilizing the knowledge learned in the last evolution generation. At the initial stage, SuperNet was initialized with considerable cells and blocks. An individual representing an architecture is obtained from the SuperNet through several benchmark operations (i.e., crossover and mutation). The genetic algorithm is used as an evolutionary algorithm. To reduce the search space, the parameters-sharing strategy is adopted to share  parameters W for different architectures. Computing the gradient (slope) using the chain rule w.t. Wi can be costly. 
 
 <ins> NPENAS: Neural Predictor Guided Evolution for Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/2003.12857), [Code](https://github.com/auroua/NPENASv1), Date 2020. 
 
