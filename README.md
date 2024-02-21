@@ -40,7 +40,7 @@ The solution comes from Intel researchers, the implementation is called DyNAS-T 
 
 <ins> IntelliSwAS: Optimizing deep neural network architectures using a particle swarm-based approach </ins>[Paper](https://arxiv.org/abs/1909.04977), [Code](https://github.com/huawei-noah/CARS), Date 2021. 
 
-IntelliSwAS is a Swarm optimization-based NAS for CNN architecture optimization. To boost the search speed, the search space is modeled as a DAG structure where vertices represent a computational unit and the data flow is represented as directed edges, which is a cell-based search space. A solution is encoded as a binary number between 0 and $2^N-1$, which encodes a Cell. N is the number of bits required to represent a cell. 
+IntelliSwAS is a Swarm optimization-based NAS for CNN architecture optimization. To boost the search speed, the search space is modeled as a DAG structure where vertices represent a computational unit and the data flow is represented as directed edges, which is a cell-based search space. A solution is encoded as a binary number between 0 and $2^N-1$, which encodes a Cell. N is the number of bits required to represent a cell, which computes based on the number of bits m required to represent an operation. In this paper, m is equal to 3 while 8 operations are adopted. 
 
 
 <ins> CARS: Continuous Evolution for Efficient Neural Architecture Search </ins> [Paper](https://arxiv.org/abs/1909.04977), [Code](https://github.com/huawei-noah/CARS), Date 2020. 
