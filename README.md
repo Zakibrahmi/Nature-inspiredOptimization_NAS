@@ -3,7 +3,7 @@ This repository collects recent Nature-inspired algorithms(Evolutionary and swar
 
 Neural Architecture Search (NAS), a subfield of AutoML, aims to  automate the architecture designs of neural networks by optimizing the topology of the networks( how to connect nodes and which operators to choose). NAS is a growing area in deep learning research that aims to deliver better-performing models and applications. It follows three stages:
 1. Search space: Layer-based, Block-based, and Cell-based. For instance, Cell-based architecture is represented as a DAG where an edge is an operation (Convolution, pooling, or a skip connection) present in the pre-defined search space. The task is to search for individual operations on each edge. The obtained cell is stacked multiple times to form the final CNN, therefore reusing the same cell architecture throughout the network. This representation is like a single-cell structure, which can have a varying impact on accuracy and latency at each neural network layer. In contrast to cell-based, layer-wise-based searches different operations/block configurations at each layer of the network to obtain more efficient models that are suitable for efficient inference on many devices due to the
-regularized topology.
+regularized topology  [Krishna Teja et al., 2022] (https://doi.org/10.1145/3524500).
 2. Search strategy/algorithm, and
 3. Evaluation strategy. Lower Fidelity Estimation LFE, which tends to minimize the amount of GPU time required by each candidate through
 partial training. 
