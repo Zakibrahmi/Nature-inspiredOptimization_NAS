@@ -33,16 +33,16 @@ Aiming to enhance the performance of the traditional network architecture crosso
 
  <ins> G-EA: Efficient Guided Evolution for Neural Architecture Search </ins>  [Paper](https://arxiv.org/abs/2110.15232), [Code](https://github.com/VascoLopes/GEA), Date 2022. 
 
-Similar to the idea presented by NPENAS, G-EA  is an Evolutionary algorithm  that uses a zero-proxy estimator as a guiding mechanism to the search method to evaluate several architectures.
-Hence, the evaluation stage is into two steps: 
+**Search space**: fixed cell-bas.
+**Solution/cell encoding**: not indicated, but probably adjacency matrix is used because NAS-Bench-X are used at the initial stage to sample architectures.  
+
+Similar to the idea presented by NPENAS, G-EA  is an Evolutionary algorithm  that uses a zero-proxy estimator as a guiding mechanism to the search method to evaluate several architectures. Hence, the evaluation stage is into two steps: 
 1. At the initialization stage an architecture is evaluated using a Jacobian covariance-based zero-proxy estimator, which reduces running time while not requiring any training to evaluate an architecture. 
 2. At the evolution stage, the fitness function is the validation accuracy after a partial train (a few epochs). 
    
 G-EA starts by randomly generating C architectures from the search space of possible architectures (e.g., NAS-Bench-101 and NASBench-
-201). These initial architectures are then evaluated using the zero-proxy estimator. To reduce the search space only the Top P scoring networks are trained and kept for the next generation. After that, at each iteration S architectures from the initial population are uniformly sampled. Only P architectures which the highest fitness score form 𝑆  are elected to be the parent of the next generation.
+201), which are cell-based search (https://arxiv.org/abs/1902.09635(. These initial architectures are then evaluated using the zero-proxy estimator. To reduce the search space only the Top P scoring networks are trained and kept for the next generation. After that, at each iteration S architectures from the initial population are uniformly sampled. Only P architectures with the highest fitness score form 𝑆  are elected to be the parent of the next generation.
 The mutation operation is achieved by randomly changing one operation of the architecture by another from the pool of operations. A new architecture is generated at each cycle by performing operation mutations over the selected parent, which are then scored using the zero-proxy estimator. Only the highest-scoring architecture is kept and added to the population after evaluating its fitness. Aiming to boost the exploration ability, G-EA removes old architecture and keeps younger architectures that represent new settings evolved by previously acquired knowledge.
-
-Solution coding: not indicated
 
 <ins> A hardware-aware framework for accelerating Neural  architecture search  across modalities </ins> [Paper](https://arxiv.org/abs/2205.10358), [Code](https://github.com/IntelLabs/DyNAS-T), Date 2022.
 
